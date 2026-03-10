@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage {
-            steps ('STAGE!') {
+            steps ('STAGE1') {
                 echo "This is stage1 running"
                 sh ''' 
                     ls
