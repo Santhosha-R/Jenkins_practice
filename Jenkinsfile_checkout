@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'santhu', url: 'https://github.com/Santhosha-R/Jenkins_pipeline_repo.git'
+            }
+        }
+    }
+}
