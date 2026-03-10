@@ -15,13 +15,28 @@ pipeline {
                 stage ('men') {
                     steps  {
                         echo "This is men running"
-                      
+                        sh ''' 
+                            
+                            sleep 5
+                        '''
                     }
                 }
                 stage ('chaild') {
                     steps  {
                         echo "This is chaild running"
-                       
+                        sh ''' 
+                            
+                            sleep 5
+                        '''
+                    }
+                }
+                stage ('baby') {
+                    steps  {
+                        echo "This is baby running"
+                        sh ''' 
+                        
+                            sleep 5
+                        '''
                     }
                 }
             }
