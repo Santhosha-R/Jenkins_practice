@@ -1,16 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage {
-            steps ('STAGE1') {
+        stage  ('STAGE1') {
+            steps {
                 echo "This is stage1 running"
                 sh ''' 
                     ls
                 '''
             }
         }
-        stage {
-            steps ('STAGE2') {
+        stage ('STAGE2') {
+            steps  {
                 echo "This is stage2 running"
                 sh ''' 
                     pwd
