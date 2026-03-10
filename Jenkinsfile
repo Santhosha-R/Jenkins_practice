@@ -10,11 +10,27 @@ pipeline {
                 '''
             }
         }
-        stage ('STAGE2') {
-            steps  {
+        stage ('PARALLEL TEST') {
+            parallel {
+                stage ('men') {
+                    steps  {
+                        echo "This is men running"
+                      
+                    }
+                }
+                stage ('chaild') {
+                    steps  {
+                        echo "This is chaild running"
+                       
+                    }
+                }
+            }
+        }
+        stage  ('STAGE2') {
+            steps {
                 echo "This is stage2 running"
                 sh ''' 
-                    pwd
+                    ls
                     sleep 5
                 '''
             }
