@@ -6,6 +6,7 @@ pipeline {
                 echo "This is stage1 running"
                 sh ''' 
                     ls
+                    sleep 5
                 '''
             }
         }
@@ -14,6 +15,7 @@ pipeline {
                 echo "This is stage2 running"
                 sh ''' 
                     pwd
+                    sleep 5
                 '''
             }
         }
