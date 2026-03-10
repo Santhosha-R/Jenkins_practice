@@ -9,7 +9,7 @@ pipeline {
         CURRENT_ENV = 'prod'
     }
 
-    // stages {
+    stages {
         // stage('CEHCKOUT_REPOA') {
         //     steps {
         //         checkout ([ $class: 'GitSCM',
@@ -26,7 +26,7 @@ pipeline {
         //             echo BRANCH_NAME: $BRANCH_NAME
         //         '''
         //     }
-        }
+        // }
 
         stage('STAGE1 When branch main') {
             when {
